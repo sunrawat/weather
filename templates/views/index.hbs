@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="main">
+        {{>header}}
+        <p>
+            This is a index page
+        </p>
+        <form>
+         <input type="text" name="address" placeholder="please enter address" id="address" />
+         <button>Search</button>
+        </form>
+
+        <p id="msg1"></p>
+        <p id="msg2"></p>
+    {{>footer}}
+    </div>
+    <script src="js/script.js"></script>
+    </body>
+
+</html>
