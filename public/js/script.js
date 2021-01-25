@@ -6,6 +6,7 @@ getLocationByAddress = ((address)=>{
         response.json().then((data)=> {
             if(data.err) {
                 console.log('error in loading')
+                
                 msg1.textContent = data.err;
             }else{ 
                 msg1.textContent = data.forecast;
