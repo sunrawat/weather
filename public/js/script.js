@@ -2,7 +2,7 @@ console.log('Loding JS...')
 getLocationByAddress = ((address)=>{
     msg1.textContent = 'Loading...';
     msg2.textContent = '';
-    fetch('http://localhost:3000/weather?address='+ address).then((response)=> {
+    fetch('/weather?address='+ address).then((response)=> {
         response.json().then((data)=> {
             if(data.err) {
                 console.log('error in loading')
